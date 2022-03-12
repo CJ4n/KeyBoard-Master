@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+	<h4>Windows API - home part</h4>
+	<h2>Keyboard Master</h2>
+	<ul>
+		<li><a href="KeyboardMasterWinAPI_HOME.exe">Example application</a></li>
+		<li>Task description:
+			<ul>
+			<li>Finish app implementation.</li>
+			<li><h3><b>Attention:</b> Please use GDI in this part of task only for painting windows background.
+				All squares should still be WinAPI <u>windows</u>.</h3></li>
+			</ul>
+		</li>
+		<li>Functionality:
+			<ul>
+			<li>Add New game and Pause to the menu with proper shortcuts.</li>
+			<li>Squares should contain one letter centred inside of the window.</li>
+			<li>When a key with a letter is pressed the most bottom square with that letter disappear.</li>
+			<li>In the windown title, there are two counters for missed keys and the wrong key pressed.</li>
+			<li>The main window can not be resized now and is always the topmost.</li>
+			<li>When not active the game is paused.</li>
+			<li>Add context menu for changing background with color or bitmap (tiled by default or stretched).</li>
+			<li>The default background color is the same as the system color of the inactive window caption.</li>
+			</ul>
+		</li>
+		<li>Additional requirements:
+			<ul>
+				<li>all of the functionality from the lab must still be working.</li>
+				<li>on the taskbar there is only one window</li>
+				<li>combination Alt + F4 closes the application</li>
+				<li>show system menu when you click Alt + Spacebar, or right-click on a window in the taskbar</li>
+				<li>no flickering or blinking and properly repainted windows after moving</li>
+				<li>application must work stable - it can not crash after some time</li>
+			</ul>
+		</li>
+		<li>Tips:
+			<ul>
+				<li>Use double buffering for drawing with GDI.</li>
+				<li>Remember about proper memory management - remove all created objects.</li>
+			</ul>
+		</li>
+		<li><i>Note: In all doubtful and untold aspects application should behave like an example app.</i></li>
+	</ul>
+	<ul>
+		<li>Scoring:
+			<ul>
+				<li>Game menu with shortcuts: 2 points</li>
+				<li>The main window fixed size and the topmost: 1 point</li>
+				<li>Removing squares at keypress: 1 point</li>
+				<li>New game and pause (menu) and game counters: 2 points</li>
+				<li>Pause at focus change: 1 point</li>
+				<li>Changing background with color (and proper default color): 2 points</li>
+				<li>Changing background with bitmap: 2 points</li>
+				<li>Changing bitmap mode: 1 point</li>
+				<li><i>Note: It is not possible to obtain points for incomplete functionality.</i></li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

@@ -327,7 +327,7 @@ LRESULT CALLBACK WndProcChild(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPa
 		}
 		TCHAR s[4];
 		const wchar_t len = 4;
-		swprintf(s, len, L"%c", c);
+		swprintf(s, len, L"%c", c - 32);
 		RECT rc;
 		GetClientRect(hWnd, &rc);
 		SetBkMode(hdc, TRANSPARENT);
